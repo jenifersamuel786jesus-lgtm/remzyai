@@ -1,0 +1,107 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Calming blues and soft greens for patient mode */
+    --background: 200 30% 98%;
+    --foreground: 210 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 15%;
+    --primary: 200 80% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 150 40% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 200 20% 92%;
+    --muted-foreground: 210 15% 45%;
+    --accent: 200 30% 90%;
+    --accent-foreground: 210 20% 15%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 200 80% 45%;
+    --chart-1: 200 80% 50%;
+    --chart-2: 150 60% 50%;
+    --chart-3: 180 70% 45%;
+    --chart-4: 220 75% 55%;
+    --chart-5: 160 65% 50%;
+    --sidebar-background: 200 25% 96%;
+    --sidebar-foreground: 210 20% 15%;
+    --sidebar-primary: 200 80% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 30% 90%;
+    --sidebar-accent-foreground: 210 20% 15%;
+    --sidebar-border: 200 20% 88%;
+    --sidebar-ring: 200 80% 45%;
+    /* Emergency button color */
+    --emergency: 0 85% 60%;
+    --emergency-foreground: 0 0% 100%;
+    /* Success color for completed tasks */
+    --success: 150 60% 45%;
+    --success-foreground: 0 0% 100%;
+    /* Warning color for alerts */
+    --warning: 40 90% 55%;
+    --warning-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 210 25% 8%;
+    --foreground: 200 20% 95%;
+    --card: 210 25% 10%;
+    --card-foreground: 200 20% 95%;
+    --popover: 210 25% 10%;
+    --popover-foreground: 200 20% 95%;
+    --primary: 200 75% 55%;
+    --primary-foreground: 210 25% 8%;
+    --secondary: 150 45% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 20% 18%;
+    --muted-foreground: 200 15% 65%;
+    --accent: 210 25% 15%;
+    --accent-foreground: 200 20% 95%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 18%;
+    --input: 210 20% 18%;
+    --ring: 200 75% 55%;
+    --chart-1: 200 75% 55%;
+    --chart-2: 150 60% 50%;
+    --chart-3: 180 65% 50%;
+    --chart-4: 220 70% 60%;
+    --chart-5: 160 60% 55%;
+    --sidebar-background: 210 25% 10%;
+    --sidebar-foreground: 200 20% 95%;
+    --sidebar-primary: 200 75% 55%;
+    --sidebar-primary-foreground: 210 25% 8%;
+    --sidebar-accent: 210 25% 15%;
+    --sidebar-accent-foreground: 200 20% 95%;
+    --sidebar-border: 210 20% 18%;
+    --sidebar-ring: 200 75% 55%;
+    --emergency: 0 80% 55%;
+    --emergency-foreground: 0 0% 100%;
+    --success: 150 55% 50%;
+    --success-foreground: 0 0% 100%;
+    --warning: 40 85% 60%;
+    --warning-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
